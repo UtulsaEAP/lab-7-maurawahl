@@ -47,6 +47,7 @@ def courseGrade(): #when spacing them out, do /t to format it
                 for data in person:
                     newfileobj.write(data + "\t")
                 newfileobj.write("\n")
+            newfileobj.write("Averages: midterm1 " + f'{midterm1:.2f}' + ", midterm2 " + f'{midterm2:.2f}' + ", final " + f'{final:.2f}')
         newfileobj.close()
     elif filename == "./Problem 3/StudentInfo1.tsv":
         #newfilename = "./Problem 3/report1.txt"
@@ -82,6 +83,8 @@ def courseGrade(): #when spacing them out, do /t to format it
                 for data in person:
                     newfileobj.write(data + "\t")
                 newfileobj.write("\n")
+            newfileobj.write("Averages: midterm1 " + f'{midterm1:.2f}' + ", midterm2 " + f'{midterm2:.2f}' + ", final " + f'{final:.2f}')
+    
         newfileobj.close()
     elif filename == "./Problem 3/StudentInfo2.tsv":
         #newfilename = "./Problem 3/report2.txt"
@@ -117,6 +120,8 @@ def courseGrade(): #when spacing them out, do /t to format it
                 for data in person:
                     newfileobj.write(data + "\t")
                 newfileobj.write("\n")
+            newfileobj.write("Averages: midterm1 " + f'{midterm1:.2f}' + ", midterm2 " + f'{midterm2:.2f}' + ", final " + f'{final:.2f}')
+
         newfileobj.close()
     else:
         exit
